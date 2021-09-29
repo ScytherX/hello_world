@@ -3,7 +3,7 @@ import { View, StyleSheet, Text } from 'react-native';
 export default function App() {
     return (
         <View style={styles.container}>
-            <Text >Hello World</Text>
+            <Text >Universidad Politécnica del Estado de Nayarit</Text>
         </View>
     );
 }
