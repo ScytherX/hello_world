@@ -1,35 +1,47 @@
-import React, { Fragment } from 'react';
-import { StyleSheet, Text, Button, Image } from 'react-native';
+import React, { Fragment, useState } from 'react';
+import { StyleSheet, Text, Button, Image, View } from 'react-native';
 export default function App() {
 
-    const handleDeploy = (e) => {
+    const [isOpen, setOpen] = useState(false);
+
+    const HandleDeploy = () => {
         return (
-            <Fragment style={styles.separador}>
-                <Image source={require('./UPENLOGO.png')} style={styles.imge} />
-                <Text style={styles.separador}>Universidad Politécnica del Estado de Nayarit</Text>
-            </Fragment>
+            <View style={styles.separador} >
+                <Text>
+                    sdsd
+                </Text>
+            </View>
         );
     }
 
-    const handleLeft = (e) => {
-
+    const HandleLeft = (e) => {
+        return (
+            <View style={styles.separador,{marginRight: 150}} >
+                <Text>
+                    sdsd
+                </Text>
+            </View>
+        );
     }
 
-    const handleRight = (e) => {
+    const HandleRight = (e) => {
 
     }
 
     return (
-        <Fragment style={styles.container}>
+        <Fragment>
+            <Button title="Fffffffffffff" onPress={HandleLeft} />
 
+            <Button title="Falcon speaks" onPress={HandleLeft} />
 
-            <Button title="Boom baby" onPress={handleDeploy} />
+            <Button title="Pie bueno" onPress={HandleRight} />
 
-            <Button title="Falcon speaks" onPress={handleLeft} />
+            <Button title="Stop" onPress={HandleRight} />
 
-            <Button title="Pie bueno" onPress={handleRight} />
-
+            <HandleDeploy />
         </Fragment>
+
+
     );
 }
 const styles = StyleSheet.create({
@@ -41,10 +53,18 @@ const styles = StyleSheet.create({
     },
     separador: {
         alignItems: 'center',
-        backgroundColor: '#FFFFFF',
+        backgroundColor: '#000232',
         alignSelf: 'center',
         justifyContent: 'center',
-        margin: 30,
+        marginTop: 150,
+        fontSize: 17
+    },
+    btnSepa: {
+        alignItems: 'center',
+        backgroundColor: '#F5FCFF',
+        alignSelf: 'center',
+        justifyContent: 'center',
+        marginTop: 15,
         fontSize: 17
     },
     imge: {
