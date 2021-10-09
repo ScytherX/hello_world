@@ -16,7 +16,7 @@ export default function App() {
 
     const HandleLeft = (e) => {
         return (
-            <View style={styles.separador,{marginRight: 150}} >
+            <View style={styles.sepaLeft} >
                 <Text>
                     sdsd
                 </Text>
@@ -30,13 +30,14 @@ export default function App() {
 
     return (
         <Fragment>
-            <Button title="Fffffffffffff" onPress={HandleLeft} />
+            
+            <Button title="Fffffffffffff" onPress={ HandleLeft } />
 
-            <Button title="Falcon speaks" onPress={HandleLeft} />
+            <Button title="Falcon speaks" onPress={ HandleLeft } />
 
-            <Button title="Pie bueno" onPress={HandleRight} />
+            <Button title="Pie bueno" onPress={ HandleRight } />
 
-            <Button title="Stop" onPress={HandleRight} />
+            <Button title="Stop" onPress={ HandleRight } />
 
             <HandleDeploy />
         </Fragment>
@@ -53,10 +54,18 @@ const styles = StyleSheet.create({
     },
     separador: {
         alignItems: 'center',
-        backgroundColor: '#000232',
+        backgroundColor: '#FFFFFF',
         alignSelf: 'center',
         justifyContent: 'center',
         marginTop: 150,
+        fontSize: 17
+    },
+    sepaLeft: {
+        alignItems: 'center',
+        backgroundColor: '#FFFFFF',
+        alignSelf: 'center',
+        justifyContent: 'center',
+        marginRight: 150,
         fontSize: 17
     },
     btnSepa: {
